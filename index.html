@@ -10,59 +10,57 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Icons -->
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
 </head>
 
-<!-- Modal éxito envío -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content glass border-0">
-            <div class="modal-body text-center p-4 p-md-5">
+<body>
+    <!-- Modal éxito envío -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass border-0">
+                <div class="modal-body text-center p-4 p-md-5">
+                    <div class="mb-3">
+                        <i class="bi bi-check-circle-fill text-info fs-1"></i>
+                    </div>
 
-                <div class="mb-3">
-                    <i class="bi bi-check-circle-fill text-info fs-1"></i>
+                    <h3 class="h5 text-white mb-2">¡Formulario enviado!</h3>
+
+                    <p class="text-white-75 mb-4">
+                        Hemos recibido tus datos correctamente.
+                        Nuestro equipo se pondrá en contacto contigo muy pronto.
+                    </p>
+
+                    <button type="button" class="btn btn-info rounded-pill px-4" data-bs-dismiss="modal">
+                        Perfecto
+                    </button>
                 </div>
-
-                <h3 class="h5 text-white mb-2">
-                    ¡Formulario enviado!
-                </h3>
-
-                <p class="text-white-75 mb-4">
-                    Hemos recibido tus datos correctamente.
-                    Nuestro equipo se pondrá en contacto contigo muy pronto.
-                </p>
-
-                <button type="button" class="btn btn-info rounded-pill px-4" data-bs-dismiss="modal">
-                    Perfecto
-                </button>
-
             </div>
         </div>
     </div>
-</div>
 
-
-<body>
     <div class="bg-wrap">
         <!-- Top mini bar -->
         <header class="container py-4">
             <div class="d-flex align-items-center justify-content-between gap-3">
                 <a class="brand d-flex align-items-center gap-2 text-decoration-none" href="/">
-                    <img src="img/logo.png" alt="" style="height: 50px;">
+                    <img src="img/logo.png" alt="Aquasimply" style="height: 50px;">
                 </a>
 
                 <div class="d-flex align-items-center gap-2 small">
                     <a class="btn btn-sm btn-outline-light rounded-pill" href="tel:+34900001147">
-                        <i class="fa-solid fa-phone"></i></i> → 900 001 147
+                        <i class="fa-solid fa-phone"></i> → 900 001 147
                     </a>
                 </div>
             </div>
@@ -79,10 +77,9 @@
                     </div>
 
                     <h1 class="display-5 text-white fw-bold lh-sm mb-3">
-                        <span><i class="fa-solid fa-glass-water-droplet"></i>Simplemente agua.</span>
+                        <span><i class="fa-solid fa-glass-water-droplet"></i> Simplemente agua.</span>
                     </h1>
 
-                    <!-- Frase marketiniana (sector agua) -->
                     <p class="lead text-white-75 mb-4">
                         <span class="fw-semibold text-white">“Convierte cada gota en eficiencia”</span>: <br>
                         Soluciones claras para cuidarte, optimizar y ahorrar en tu consumo de agua.
@@ -98,6 +95,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-12 col-md-6">
                             <div class="feature-card">
                                 <i class="fa-solid fa-heart-pulse" style="color: white;"></i>
@@ -107,6 +105,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-12 col-md-6">
                             <div class="feature-card">
                                 <i class="fa-solid fa-euro-sign" style="color: white;"></i>
@@ -116,6 +115,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-12 col-md-6">
                             <div class="feature-card">
                                 <i class="fa-solid fa-leaf" style="color: white;"></i>
@@ -126,7 +126,6 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
 
                 <!-- RIGHT: Lead capture -->
@@ -138,12 +137,13 @@
                                     <h2 class="h3 text-white mb-1">¿Quieres información?</h2>
                                     <p class="text-white-75 mb-0">Te asesoramos sobre todos nuestros modelos</p>
                                 </div>
-                                <span class="chip"><i class="fa-solid fa-droplet" style="color: white;"></i>Pure
+                                <span class="chip"><i class="fa-solid fa-droplet" style="color: white;"></i> Pure
                                     water</span>
                             </div>
 
                             <form id="leadForm" action="https://formsubmit.co/marketing@biofy.es" method="POST"
                                 class="needs-validation" novalidate>
+
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <label for="name" class="form-label text-white-75">Nombre</label>
@@ -188,7 +188,7 @@
                                             <input class="form-check-input" type="checkbox" id="consent" required>
                                             <label class="form-check-label text-white-75" for="consent">
                                                 Acepto que me contacten y la <a class="link-light" href="#"
-                                                    onclick="return false;">política de privacidad</a>.
+                                                    data-privacy-link>política de privacidad</a>.
                                             </label>
                                             <div class="invalid-feedback">Debes aceptar el consentimiento.</div>
                                         </div>
@@ -201,28 +201,18 @@
                                         <button class="btn btn-info btn-lg fw-semibold" type="submit">
                                             <i class="bi bi-send"></i> Enviar
                                         </button>
-                                        <p class="privacy-text" style="margin-top: 20px;">RESPONSABLE DEL TRATAMIENTO:
-                                            TRATAMIENTO INTEGRAL DEL AGUA HIDROSALUD, S.L.
+
+                                        <p class="privacy-text" style="margin-top: 20px;">
+                                            RESPONSABLE DEL TRATAMIENTO: TRATAMIENTO INTEGRAL DEL AGUA HIDROSALUD, S.L.
                                             INFO@AQUASIMPLY.ES
-                                            FINALIDAD: Asesorar a las
-                                            personas interesadas en conocer nuestros productos y servicios. Contacto
-                                            profesional
+                                            FINALIDAD: Asesorar a las personas interesadas en conocer nuestros productos
+                                            y servicios.
                                             LEGITIMACIÓN: Consentimiento expreso e inequívoco del interesado (art.
                                             6.1.a) RGPD 2016/679)
-                                            DESTINATARIOS: No están previstas cesiones de datos a terceros, salvo a
-                                            posibles encargados
-                                            del tratamiento por cuenta del responsable del mismo, o de las derivadas por
-                                            obligación
-                                            legal o necesarias para la finalidad objeto de tratamiento. DERECHOS: Puede
-                                            Acceder,
-                                            Rectificar y Suprimir los datos, así como otros derechos indicados en la
-                                            información
-                                            adicional a través del siguiente email: INFO@AQUASIMPLY.ES INFORMACIÓN
-                                            ADICIONAL:
-                                            Puede consultar
-                                            la información adicional en Política de Privacidad. <br>"Podrá retirar su
-                                            consentimiento en cualquier momento a través del
-                                            correo electrónico INFO@AQUASIMPLY.ES"</p>
+                                            DESTINATARIOS: No están previstas cesiones de datos a terceros, salvo
+                                            obligación legal.
+                                            DERECHOS: Acceder, rectificar y suprimir... a través de INFO@AQUASIMPLY.ES
+                                        </p>
                                     </div>
                                 </div>
                             </form>
@@ -233,14 +223,17 @@
                                 <span class="text-white-50">© <span id="year"></span> Aquasimply.es</span>
                                 <div class="d-flex gap-3">
                                     <a class="text-white-50 hover-white"
-                                        href="https://www.instagram.com/aquasimply_es/?hl=es" aria-label="Instagram"><i
-                                            class="bi bi-instagram"></i></a>
+                                        href="https://www.instagram.com/aquasimply_es/?hl=es" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
                                     <a class="text-white-50 hover-white"
-                                        href="https://www.linkedin.com/company/aquasimply/" aria-label="LinkedIn"><i
-                                            class="bi bi-linkedin"></i></a>
+                                        href="https://www.linkedin.com/company/aquasimply/" aria-label="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
                                     <a class="text-white-50 hover-white"
-                                        href="https://www.facebook.com/AquaSimply/?locale=es_ES"
-                                        aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                        href="https://www.facebook.com/AquaSimply/?locale=es_ES" aria-label="Facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
                                 </div>
                             </div>
 
@@ -265,21 +258,17 @@
         <div class="blob b3"></div>
     </div>
 
-    <!----------------------------------WIDGETS------------------------------------->
+    <!-- WIDGETS -->
+    <button id="accessibility-toggle" type="button" aria-label="Accesibilidad">
+        <span><i class="fa-brands fa-2x fa-accessible-icon"></i></span>
+    </button>
 
-    <!-- BOTÓN DE ACCESIBILIDAD -->
-    <button id="accessibility-toggle" onclick="toggleAccessibilityWidget()"><span><i
-                class="fa-brands fa-2x fa-accessible-icon"></i></span></button>
-
-    <!-- PANEL DE ACCESIBILIDAD -->
     <div id="accessibility-widget">
-        <button onclick="toggleContrast()">Alto Contraste</button>
-        <button onclick="toggleGrayscale()">Escala de Grises</button>
-        <button onclick="increaseTextSize()">Aumentar Texto</button>
-        <button onclick="decreaseTextSize()">Reducir Texto</button>
+        <button type="button" data-a11y="contrast">Alto Contraste</button>
+        <button type="button" data-a11y="grayscale">Escala de Grises</button>
+        <button type="button" data-a11y="incText">Aumentar Texto</button>
+        <button type="button" data-a11y="decText">Reducir Texto</button>
     </div>
-
-
 
     <a id="whatsapp-chat"
         href="https://wa.me/655315935?text=Hola%2C%20quiero%20más%20información%20sobre%20vuestros%20servicios"
@@ -287,267 +276,124 @@
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
+    <!-- MODAL AVISO EMERGENTE (genérico) -->
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="alertModalTitle">Aviso</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="alertModalMessage" class="mb-0"></p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- ========================== -->
-    <!-- AVISO EMERGENTE DE COOKIES -->
-    <!-- ========================== -->
+    <!-- AVISO EMERGENTE COOKIES (estilo biofy) -->
+    <div class="cookie-overlay" id="cookie-overlay" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <div class="cookie-box" id="cookie-banner">
+            <div class="cookie-title">AVISO EMERGENTE COOKIES</div>
 
-    <div id="cookie-overlay" class="cookie-overlay">
-        <div class="cookie-popup">
-            <h2 style="color: white;"><b>AVISO EMERGENTE COOKIES</b></h2><br>
+            <!-- IMPORTANTE: por copyright, pega aquí TU TEXTO EXACTO si quieres que sea idéntico al de biofy.es -->
+            <p class="cookie-text" id="cookie-banner-text">
+                Este sitio web, titularidad de TRATAMIENTO INTEGRAL DEL AGUA HIDROSALUD, S.L., utiliza cookies propias y
+                de
+                terceros con fines analíticos y publicitarios, para recopilar estadísticas y facilitar publicidad, con
+                el
+                objetivo de mejorar la experiencia de usuario y presentar anuncios acordes a sus preferencias.
 
-            <p style="color: white;">
-                Este sitio web, titularidad de <strong>TRATAMIENTO INTEGRAL DEL AGUA HIDROSALUD, S.L.</strong>,
-                utiliza cookies propias y de terceros con fines analíticos y publicitarios,
-                para recopilar estadísticas y facilitar publicidad, con el objetivo de mejorar
-                la experiencia de usuario y presentar anuncios acordes a sus preferencias.
+
             </p>
 
-            <p style="color: white;">
-                Pulse <strong>“MAS INFORMACIÓN”</strong> para acceder a nuestra Política de Cookies.
-                Pulse <strong>“ACEPTAR”</strong> para aceptar todas las cookies.
-                Pulse <strong>“DENEGAR”</strong> para rechazar todas las cookies.
-                Pulse <strong>“PREFERENCIAS”</strong> para configurarlas de manera granular.
+            <p class="cookie-text cookie-text-small">
+                Pulse “MAS INFORMACIÓN” para acceder a nuestra Política de Cookies. Pulse “ACEPTAR” para aceptar todas
+                las
+                cookies. Pulse “DENEGAR” para rechazar todas las cookies. Pulse “PREFERENCIAS” para configurarlas de
+                manera
+                granular.
             </p>
 
-            <p style="color: white;">Puedes cambiar tu consentimiento en cualquier momento desde la Política de Cookies.
+            <p class="cookie-text cookie-text-small">
+                Puedes cambiar tu consentimiento en cualquier momento desde la Política de Cookies.
             </p>
 
             <div class="cookie-actions">
-                <button id="btn-accept" class="btn-primary">ACEPTAR</button>
-                <button id="btn-deny" class="btn-outline">DENEGAR</button>
-                <button id="btn-preferences" class="btn-outline">PREFERENCIAS</button>
-                <a href="#" class="btn-link" style="color: white;">MAS INFORMACIÓN</a>
+                <button type="button" class="cookie-btn" id="cookie-accept">ACEPTAR</button>
+                <button type="button" class="cookie-btn" id="cookie-deny">DENEGAR</button>
+                <button type="button" class="cookie-btn" id="cookie-preferences">PREFERENCIAS</button>
+                <!-- <a class="cookie-link" href="politica_cookies.html" id="cookie-more">MAS INFORMACIÓN</a> -->
             </div>
         </div>
     </div>
 
+    <!-- PANEL PREFERENCIAS -->
+    <div class="cookie-overlay" id="cookie-preferences-overlay" role="dialog" aria-label="Preferencias de cookies">
+        <div class="cookie-box cookie-box-wide">
+            <div class="cookie-title">Configure las cookies</div>
 
-
-    <!-- ================================== -->
-    <!-- PANEL DE CONFIGURACIÓN DE COOKIES -->
-    <!-- ================================== -->
-
-    <div id="cookie-settings" class="cookie-overlay">
-        <div class="cookie-settings-popup">
-            <h2 style="color: white;">Configure las cookies</h2>
-
-            <p style="color: white;">
-                Este sitio web utiliza cookies propias y de terceros con fines analíticos
-                y publicitarios, para recopilar estadísticas y mejorar la experiencia del usuario.
+            <p class="cookie-text cookie-text-small">
+                Este sitio web utiliza cookies propias y de terceros con fines analíticos y publicitarios, para
+                recopilar
+                estadísticas y mejorar la experiencia del usuario.
             </p>
 
-            <div class="cookie-block">
-                <h4 style="color: white;">Cookies de Análisis "Estadísticas"</h4>
-                <p style="color: white;">
-                    Seguimiento y análisis de visitas, reconocimiento en visitas sucesivas, medición
-                    de tráfico y actividad del sitio web.
-                </p>
-                <label class="switch">
-                    <input type="checkbox" id="toggle-analytics">
-                    <span class="slider"></span>
-                </label>
+            <div class="cookie-pref">
+                <div class="cookie-pref-head">
+                    <div class="cookie-pref-name">Cookies de Análisis "Estadísticas"</div>
+                    <label class="cookie-switch">
+                        <input type="checkbox" id="cookie-analytics">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+                <div class="cookie-pref-desc">
+                    Seguimiento y análisis de visitas, reconocimiento en visitas sucesivas, medición de tráfico y
+                    actividad del
+                    sitio web.
+                </div>
             </div>
 
-            <div class="cookie-block">
-                <h4 style="color: white;">Cookies de Publicidad "Marketing"</h4>
-                <p style="color: white;">
+            <div class="cookie-pref">
+                <div class="cookie-pref-head">
+                    <div class="cookie-pref-name">Cookies de Publicidad "Marketing"</div>
+                    <label class="cookie-switch">
+                        <input type="checkbox" id="cookie-marketing">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+                <div class="cookie-pref-desc">
                     Se utilizan para orientar la publicidad según el contenido relevante para el usuario.
-                </p>
-                <label class="switch">
-                    <input type="checkbox" id="toggle-marketing">
-                    <span class="slider"></span>
-                </label>
+                </div>
             </div>
 
-            <div class="cookie-settings-actions">
-                <button id="enable-all" class="btn-primary">Habilitar todas</button>
-                <button id="disable-all" class="btn-outline">Deshabilitar todas</button>
+            <div class="cookie-actions cookie-actions-right">
+                <button type="button" class="cookie-btn" id="cookie-enable-all">Habilitar todas</button>
+                <button type="button" class="cookie-btn" id="cookie-disable-all">Deshabilitar todas</button>
+                <button type="button" class="cookie-btn " id="cookie-save">GUARDAR CONFIGURACIÓN</button>
             </div>
-
-            <button id="save-settings" class="btn-primary full">GUARDAR CONFIGURACIÓN</button>
         </div>
     </div>
 
-
-    <script>
-        let currentFontSize = 100;
-
-        function toggleAccessibilityWidget() {
-            const widget = document.getElementById('accessibility-widget');
-            widget.style.display = widget.style.display === 'none' || widget.style.display === '' ? 'flex' : 'none';
-        }
-
-        function increaseTextSize() {
-            currentFontSize += 10;
-            document.body.style.fontSize = currentFontSize + '%';
-        }
-
-        function decreaseTextSize() {
-            currentFontSize = Math.max(80, currentFontSize - 10);
-            document.body.style.fontSize = currentFontSize + '%';
-        }
-
-        function toggleContrast() {
-            document.body.classList.toggle('high-contrast');
-        }
-
-        function toggleGrayscale() {
-            document.body.classList.toggle('grayscale');
-        }
-    </script>
+    <!-- BOTÓN "GESTIONAR CONSENTIMIENTO" (aparece tras elegir) -->
+    <button type="button" id="cookie-manage-consent" aria-label="Gestionar consentimiento">
+        GESTIONAR CONSENTIMIENTO
+    </button>
 
 
 
-
-    <script>
-        // Elementos
-        const popup = document.getElementById("cookie-overlay");
-        const settingsPanel = document.getElementById("cookie-settings");
-
-        // Botones
-        const btnAccept = document.getElementById("btn-accept");
-        const btnDeny = document.getElementById("btn-deny");
-        const btnPreferences = document.getElementById("btn-preferences");
-
-        // Toggles
-        const toggleAnalytics = document.getElementById("toggle-analytics");
-        const toggleMarketing = document.getElementById("toggle-marketing");
-
-        const btnEnableAll = document.getElementById("enable-all");
-        const btnDisableAll = document.getElementById("disable-all");
-        const btnSave = document.getElementById("save-settings");
-
-        // Mostrar aviso solo si no existe consentimiento válido
-        if (!localStorage.getItem("cookieConsent")) {
-            popup.style.display = "flex";
-        }
-
-        // ========== ACEPTAR TODO ==========
-        btnAccept.addEventListener("click", () => {
-            saveConsent(true, true);
-            popup.style.display = "none";
-        });
-
-        // ========== DENEGAR TODO ==========
-        btnDeny.addEventListener("click", () => {
-            saveConsent(false, false);
-            popup.style.display = "none";
-        });
-
-        // ========== ABRIR PREFERENCIAS ==========
-        btnPreferences.addEventListener("click", openSettings);
-
-        // Para enlaces “Configuración” de otros lugares (política de cookies)
-        window.openCookieSettings = openSettings;
-
-        function openSettings() {
-            popup.style.display = "none";
-            settingsPanel.style.display = "flex";
-        }
-
-        // ========== HABILITAR / DESHABILITAR TODO ==========
-        btnEnableAll.onclick = () => {
-            toggleAnalytics.checked = true;
-            toggleMarketing.checked = true;
-        };
-
-        btnDisableAll.onclick = () => {
-            toggleAnalytics.checked = false;
-            toggleMarketing.checked = false;
-        };
-
-        // ========== GUARDAR CONFIGURACIÓN ==========
-        btnSave.addEventListener("click", () => {
-            const analytics = toggleAnalytics.checked;
-            const marketing = toggleMarketing.checked;
-            saveConsent(analytics, marketing);
-            settingsPanel.style.display = "none";
-        });
-
-        // ========== GUARDAR EN LOCALSTORAGE ==========
-        function saveConsent(analytics, marketing) {
-            const data = {
-                necessary: true,               // Siempre activas
-                analytics,
-                marketing,
-                date: new Date().toISOString() // Para control de 24 meses (AEPD)
-            };
-
-            localStorage.setItem("cookieConsent", JSON.stringify(data));
-        }
-
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const form = document.getElementById("leadForm");
-            if (!form) return;
-
-            form.addEventListener("submit", async (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-
-                // Validación Bootstrap
-                if (!form.checkValidity()) {
-                    form.classList.add("was-validated");
-                    return;
-                }
-
-                // Botón loading (opcional)
-                const btn = form.querySelector('button[type="submit"]');
-                const originalBtnHtml = btn ? btn.innerHTML : "";
-                if (btn) {
-                    btn.disabled = true;
-                    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
-                }
-
-                try {
-                    const formData = new FormData(form);
-
-                    // Enviar a FormSubmit sin redirigir
-                    const res = await fetch(form.action, {
-                        method: "POST",
-                        body: formData,
-                        headers: {
-                            "Accept": "application/json" // clave para que no devuelva página HTML
-                        }
-                    });
-
-                    if (!res.ok) throw new Error("Error al enviar");
-
-                    // Mostrar modal OK
-                    const modal = new bootstrap.Modal(document.getElementById("successModal"));
-                    modal.show();
-
-                    // Limpiar formulario
-                    form.reset();
-                    form.classList.remove("was-validated");
-
-                } catch (err) {
-                    // Si quieres, muestra un aviso simple
-                    alert("No se pudo enviar el formulario. Inténtalo de nuevo.");
-                    console.error(err);
-                } finally {
-                    if (btn) {
-                        btn.disabled = false;
-                        btn.innerHTML = originalBtnHtml;
-                    }
-                }
-            });
-        });
-
-
-    </script>
-
-
-
-    <!----------------------------------WIDGETS------------------------------------->
-
-
-
+    <!-- Bootstrap bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
+    <!-- JS separados -->
+    <script src="js/app.js" defer></script>
+    <script src="js/accessibility.js" defer></script>
+    <script src="js/cookies.js" defer></script>
+    <script src="js/form.js" defer></script>
 </body>
 
 </html>
